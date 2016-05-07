@@ -12,4 +12,12 @@ function osk_theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'osk_theme_styles' );
 
+function osk_theme_js() {
+
+  wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', '', '', true );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'osk_theme_js' );
+
 ?>
