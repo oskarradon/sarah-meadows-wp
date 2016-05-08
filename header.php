@@ -15,4 +15,8 @@
       <h1>SARAH</h1>
       <h1>MEADOWS</h1>
     </a>
+    <nav>
+      <a href="#">PORTFOLIO</a>
+      <a href="#">CV</a>
+    </nav>
   </header>
