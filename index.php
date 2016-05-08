@@ -4,7 +4,7 @@
 
   <div class="post">
     <a href="<?php the_permalink(); ?>">
-      <img src="" alt="" />
+      <?php the_content(); ?>
       <p><?php the_title(); ?></p>
     </a>
   </div>
