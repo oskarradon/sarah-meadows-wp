@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <header>
     <a href="<?php bloginfo('url'); ?>">
       <h1>SARAH</h1>
