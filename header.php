@@ -15,8 +15,17 @@
       <h1>SARAH</h1>
       <h1>MEADOWS</h1>
     </a>
+
     <nav>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">CV</a>
+      <?php
+      $defaults = array(
+        'container' => false,
+        'theme-location' => 'primary-menu',
+        'menu_class' => 'no-bullet'
+      );
+
+      wp_nav_menu( $defaults );
+
+      ?>
     </nav>
   </header>
