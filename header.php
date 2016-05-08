@@ -1,31 +1,51 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php wp_title(); ?></title>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><?php wp_title( '|', true, 'right' ); bloginfo( 'name' ); ?></title>
 
-  <?php wp_head(); ?>
+    <?php wp_head(); ?>
 
-</head>
+  </head>
 
-<body <?php body_class(); ?>>
-  <header>
-    <a href="<?php bloginfo('url'); ?>">
-      <h1>SARAH</h1>
-      <h1>MEADOWS</h1>
-    </a>
+  <body <?php  body_class(); ?>>
+    <header class="row no-max pad main">
+  <h1><a class='current' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+  <a href="" class="nav-toggle"><span></span>Menu</a>
+  <nav>
+    <h1 class="open"><a class='current' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+      
+    <?php 
 
-    <nav>
-      <?php
       $defaults = array(
         'container' => false,
-        'theme-location' => 'primary-menu',
-        'menu_class' => 'no-bullet'
+        'theme_location'  => 'primary-menu',
+        'menu_class'  => 'no-bullet'
       );
 
       wp_nav_menu( $defaults );
 
-      ?>
-    </nav>
-  </header>
+    ?>
+<!--
+    <ul class="no-bullet">
+      <li class="current parent"><a class='current' href="index.html">Portfolio</a>
+        <ul class="sub-menu">
+          <li><a href="item.html">Portfolio Item</a></li>
+          <li><a href="item.html">Portfolio Item</a></li>
+          <li><a href="item.html">Portfolio Item</a></li>
+          <li><a href="item.html">Portfolio Item</a></li>
+        </ul>
+      </li>
+      <li class="parent"><a href="blog.html">Blog</a>
+        <ul class="sub-menu">
+          <li><a href="single-post.html">Single Post</a></li>
+          <li><a href="author.html">Author Page</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+-->
+  </nav>
+</header>
