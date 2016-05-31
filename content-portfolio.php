@@ -1,4 +1,4 @@
-<?php 
+<?php
 
   $num_posts = ( is_front_page() ) ? 10 : -1;
 
@@ -11,11 +11,11 @@
 ?>
 
 
-<section class="row no-max pad">
-  
+<section class="main-content">
+
   <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
 
-  <div class="small-6 medium-4 large-3 columns grid-item">
+  <div class="portfolio-item">
     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
   </div>
 
