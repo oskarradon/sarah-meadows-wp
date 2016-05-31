@@ -11,7 +11,7 @@
 	
   	<?php endwhile; else : ?>
   	
-  	  <p><?php _e( 'Sorry, page found.', 'treehouse-portfolio' ); ?></p>
+  	  <p><?php _e( 'Sorry, page found.', 'sarah-meadows' ); ?></p>
   	
   	<?php endif; ?>
     
