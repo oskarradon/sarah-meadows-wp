@@ -15,24 +15,45 @@ body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+nav h1 {
+  margin: 0px;
+}
+
 nav h1 a {
   text-decoration: none;
   font-weight: 100;
   text-transform: uppercase;
+  letter-spacing: .23em;
+  margin: 0px;
+  color: black;
 }
+
+nav h1 a:visited {
+  color: black;
+}
+
 
 .menu {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   list-style: none;
-  margin: 0px;
+  margin: 5px 0 0;
   padding: 0px;
-  color: #F9C22E;
 }
 
 .menu li {
   display: inline;
+  margin-right: 30px;
 }
 
-.menu a {
+.menu li a {
+  color: #F9C22E;
   text-decoration: none;
+}
+
+.menu li a:visited {
+  color: #F9C22E;
+}
+
+.menu li.current-menu-item a {
+  text-shadow: 0px 0px 4px #F9C22E;
 }
