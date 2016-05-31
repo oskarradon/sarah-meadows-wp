@@ -15,6 +15,12 @@ body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
+/*    HEADER    */
+
+header  {
+  padding: 80px 0 0 80px;
+}
+
 nav h1 {
   margin: 0px;
 }
@@ -32,7 +38,6 @@ nav h1 a:visited {
   color: black;
 }
 
-
 .menu {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   list-style: none;
@@ -48,6 +53,8 @@ nav h1 a:visited {
 .menu li a {
   color: #F9C22E;
   text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .04em;
 }
 
 .menu li a:visited {
