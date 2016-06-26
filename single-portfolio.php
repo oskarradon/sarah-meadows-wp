@@ -3,28 +3,25 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<h1 class="portfolio-title"><?php the_title(); ?></h1>
+	<h1 class="portfolio-title"><?php the_title(); ?></h1>
 
-<?php 
+	<?php 
 
-$images = get_field('images');
+	$images = get_field('images');
 
-if( $images ): ?>
-    <ul>
-        <?php foreach( $images as $image ): ?>
-            <li>
-                <a href="<?php echo $image['url']; ?>">
-                     <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
-                </a>
-                <p><?php echo $image['caption']; ?></p>
-            </li>
-        <?php endforeach; ?>
-    </ul>
-<?php endif; ?>
+	if( $images ): ?>
+
+		<?php foreach( $images as $image ): ?>
+
+			<img class="portfolio-image" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['caption']; ?>" />
+
+			<p class="image-caption"><?php echo $image['caption']; ?></p>
+
+		<?php endforeach; ?>
+
+	<?php endif; ?>
 
 <?php endwhile; endif; ?>
-
-
 
 
 <?php get_footer(); ?>
