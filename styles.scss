@@ -71,8 +71,13 @@ header  {
   opacity: 1; 
 }
 
+.portfolio-item:hover img{
+  box-shadow: 0 1px 6px #000;
+}
+
 .portfolio-item {
   width: 300px;
+  position: absolute;
 }
 
 .post-title {
@@ -87,14 +92,26 @@ header  {
 
 // STYLING EACH PORFOLIO ITEM
 
-@for $i from 1 through 20 {
-  #post#{$i} {
-    position: absolute;
-    left: calc($i * 200px);
-    top: calc($i * 300px);
-  }
+
+#post1 {
+  left: 400px;
+  top: 250px;
 }
 
+#post2 {
+  left: 800px;
+  top: 600px;
+}
+
+#post3 {
+  left: 200px;
+  top: 850px;
+}
+
+#post4 {
+  left: 200px;
+  top: 850px;
+}
 
 
 // PORTFOLIO PIECE
