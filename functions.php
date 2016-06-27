@@ -2,6 +2,7 @@
 
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
+add_image_size( 'post-size', 200, 200 );
 
 function wpt_excerpt_length( $length ) {
 	return 16;

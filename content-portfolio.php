@@ -7,7 +7,7 @@
     'posts_per_page' => $num_posts
   );
   $query = new WP_Query( $args );
-  $unique_id = 0;
+  $unique_id = 1;
 ?>
 
 
@@ -16,7 +16,7 @@
   <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
   
   <div id="post<?php echo $unique_id;?>" class="portfolio-item">
-    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-size'); ?></a>
     <p class="post-title"><?php the_title(); ?></p>
   </div>
 
