@@ -18,63 +18,92 @@ body {
 /*    HEADER    */
 
 header  {
-  padding: 80px 0 0 80px;
+  width: 203px;
+  margin: 50px 0 0 50px;
+  nav h1 {
+    margin: 0px;
+    a {
+      text-decoration: none;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: .23em;
+      margin: 0px;
+      color: black;
+      &:visited {
+        color: black;
+      }
+    }
+  }
+  .menu {
+    font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0px;
+    li {
+      display: inline;
+      margin-right: 30px;
+      a {
+        color: #F9C22E;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .04em;
+        &:visited {
+          color: #F9C22E;
+        }
+      }
+      &.current-menu-item a, &:hover {
+        text-shadow: 0px 0px 4px #F9C22E;
+      }
+    }
+  }
 }
 
-nav h1 {
-  margin: 0px;
+
+// FRONT PAGE
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-nav h1 a {
-  text-decoration: none;
-  font-weight: 100;
-  text-transform: uppercase;
-  letter-spacing: .23em;
-  margin: 0px;
-  color: black;
+.portfolio-item:hover .post-title{
+  opacity: 1; 
 }
 
-nav h1 a:visited {
-  color: black;
+.portfolio-item {
+  width: 300px;
 }
 
-.menu {
+.post-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
-  list-style: none;
-  margin: 5px 0 0;
-  padding: 0px;
-}
-
-.menu li {
-  display: inline;
-  margin-right: 30px;
-}
-
-.menu li a {
   color: #F9C22E;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: .04em;
+  font-style: italic;
+  width: 300px;
+  opacity: 0;
+  // text-align: center;
 }
 
-.menu li a:visited {
-  color: #F9C22E;
-}
 
-.menu li.current-menu-item a {
-  text-shadow: 0px 0px 4px #F9C22E;
-}
+// PORTFOLIO PIECE
 
 .portfolio-title {
-  text-align: center;
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   color: #F9C22E;
   font-size: 16px;
   font-style: italic;
   font-weight: normal;
-  margin-top: 30px;
+  margin: 50px;
+  width: 203px;
+  @media (min-width: 500px) {
+    margin: 50px auto;
+  }
 }
 
 .image-caption {
   display: none;
+}
+
+.portfolio-image {
+  margin-bottom: 50px;
 }
