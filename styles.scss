@@ -61,11 +61,11 @@ header  {
 
 // FRONT PAGE
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+// .main-content {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 
 .portfolio-item:hover .post-title{
   opacity: 1; 
@@ -81,8 +81,20 @@ header  {
   font-style: italic;
   width: 300px;
   opacity: 0;
+  margin-top: 8px;
   // text-align: center;
 }
+
+// STYLING EACH PORFOLIO ITEM
+
+@for $i from 1 through 20 {
+  #post#{$i} {
+    position: absolute;
+    left: calc($i * 200px);
+    top: calc($i * 300px);
+  }
+}
+
 
 
 // PORTFOLIO PIECE

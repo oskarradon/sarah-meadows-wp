@@ -46,11 +46,6 @@ header {
       header .menu li.current-menu-item a, header .menu li:hover {
         text-shadow: 0px 0px 4px #F9C22E; }
 
-.main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
 .portfolio-item:hover .post-title {
   opacity: 1; }
 
@@ -62,7 +57,108 @@ header {
   color: #F9C22E;
   font-style: italic;
   width: 300px;
-  opacity: 0; }
+  opacity: 0;
+  margin-top: 8px; }
+
+#post1 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post2 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post3 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post4 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post5 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post6 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post7 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post8 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post9 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post10 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post11 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post12 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post13 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post14 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post15 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post16 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post17 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post18 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post19 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
+
+#post20 {
+  position: absolute;
+  left: calc($i * 200px);
+  top: calc($i * 300px); }
 
 .portfolio-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
