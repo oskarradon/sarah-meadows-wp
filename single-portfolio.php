@@ -5,22 +5,26 @@
 
 	<h1 class="portfolio-title"><?php the_title(); ?></h1>
 
-	<?php 
+	<section class="main-content">
 
-	$images = get_field('images');
+		<?php 
 
-	if( $images ): ?>
+		$images = get_field('images');
 
-		<?php foreach( $images as $image ): ?>
+		if( $images ): ?>
 
-			<img class="portfolio-image" src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['caption']; ?>" />
+			<?php foreach( $images as $image ): ?>
 
-			<p class="image-caption"><?php echo $image['caption']; ?></p>
+				<img class="portfolio-image" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 
-		<?php endforeach; ?>
+				<p class="image-caption"><?php echo $image['caption']; ?></p>
 
-	<?php endif; ?>
+			<?php endforeach; ?>
 
+		<?php endif; ?>
+
+	</section>
+	
 <?php endwhile; endif; ?>
 
 
