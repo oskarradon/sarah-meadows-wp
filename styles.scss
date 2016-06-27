@@ -19,7 +19,7 @@ body {
 
 header  {
   width: 203px;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 50px 50px;
   nav h1 {
     margin: 0px;
     a {
@@ -60,58 +60,74 @@ header  {
 
 
 // FRONT PAGE
-
-// .main-content {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-.portfolio-item:hover .post-title{
-  opacity: 1; 
-}
-
-.portfolio-item:hover img{
-  box-shadow: 0 1px 6px #000;
-}
-
-.portfolio-item {
-  width: 300px;
-  position: absolute;
-}
-
-.post-title {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
-  color: #F9C22E;
-  font-style: italic;
-  width: 300px;
-  opacity: 0;
-  margin-top: 8px;
+main {
   // text-align: center;
+  .portfolio-item {
+    max-width: 200px;
+    margin: 0 auto;
+    @media (min-width: 500px) {
+      position: absolute;
+      padding-bottom: 100px;
+      }
+  }
+  .post-title {
+    font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    color: #F9C22E;
+    font-style: italic;
+    margin: 8px auto 50px;
+    width: 200px;
+    word-wrap: break-word;
+    text-align: left;
+    @media (min-width: 500px) {
+      opacity: 0;
+    }
+  }
 }
 
-// STYLING EACH PORFOLIO ITEM
+@media (min-width: 500px) {
+
+  .portfolio-item:hover .post-title{
+    opacity: 1; 
+  }
+
+  .portfolio-item:hover img{
+    box-shadow: 0 1px 6px #000;
+  }
 
 
-#post1 {
-  left: 400px;
-  top: 250px;
+
+
+
+  // STYLING EACH PORTFOLIO ITEM
+
+  #post1 {
+    left: 300px;
+    top: 250px;
+  }
+
+  #post2 {
+    left: 800px;
+    top: 400px;
+  }
+
+  #post3 {
+    left: 1400px;
+    top: 200px;
+  }
+
+  #post4 {
+    left: 200px;
+    top: 850px;
+  }
+
+  #post5 {
+    left: 200px;
+    top: 850px;
+  }
+
 }
 
-#post2 {
-  left: 800px;
-  top: 600px;
-}
 
-#post3 {
-  left: 200px;
-  top: 850px;
-}
-
-#post4 {
-  left: 200px;
-  top: 850px;
-}
 
 
 // PORTFOLIO PIECE
@@ -131,8 +147,4 @@ header  {
 
 .image-caption {
   display: none;
-}
-
-.portfolio-image {
-  margin-bottom: 50px;
 }
