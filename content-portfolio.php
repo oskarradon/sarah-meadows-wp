@@ -1,6 +1,6 @@
 <?php
 
-  $num_posts = ( is_front_page() ) ? 10 : -1;
+  $num_posts = ( is_front_page() ) ? 20 : -1;
 
   $args = array(
     'post_type' => 'portfolio',
