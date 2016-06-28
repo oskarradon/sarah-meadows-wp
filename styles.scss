@@ -13,6 +13,9 @@ Made with help from Treehouse! :)
 
 body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  @media (min-width: 500px) {
+    width: 2600px;
+  }
 }
 
 /*    HEADER    */
@@ -62,12 +65,14 @@ header  {
 // FRONT PAGE
 main {
   text-align: center;
+  overflow: auto;
   @media (min-width: 500px) {
     text-align: left;
   }
   .portfolio-item {
     max-width: 200px;
     margin: 0 auto 80px;
+    // padding: 0 100px 100px 0;
     @media (min-width: 500px) {
       position: absolute;
       margin: 0;
@@ -99,12 +104,14 @@ main {
 
 // STYLING EACH PORTFOLIO ITEM
 // This is the layout of each div:
-
-// [ 1  2  3  4 ] [ 13 14 15 16 ]
-// [ 5  6  7  8 ] [ 17 18 19 20 ]
-// [ 9 10 11 12 ] [ 21 22 23 24 ]
+// [  1  2  3  4  5 ] row 1
+// [  6  7  8  9 10 ] row 2
+// [ 11 12 13 14 15 ] row 3
+// [ 16 17 18 19 20 ] row 4
 
 @media (min-width: 500px) {
+
+  // row 1
 
   #post1 {
     left: 300px;
@@ -127,34 +134,65 @@ main {
   }
 
   #post5 {
+    left: 2200px;
+    top: 500px;
+  }
+
+  // row 2
+
+  #post6 {
     left: 100px;
     top: 1000px;
   }
 
-  #post6 {
+  #post7 {
     left: 650px;
     top: 850px;
   }
 
-  #post7 {
+  #post8 {
     left: 1200px;
     top: 950px;
   }
 
-  #post8 {
+  #post9 {
     left: 1650px;
     top: 1350px;
   }
 
-  #post9 {
+  #post10 {
+    left: 2100px;
+    top: 1100px;
+  }
+
+  // row 3
+
+  #post11 {
     left: 200px;
     top: 1450px;
   }
 
-  #post10 {
+  #post12 {
     left: 800px;
-    top: 1650px;
+    top: 1750px;
   }
+
+  #post13 {
+    left: 1000px;
+    top: 1300px;
+  }
+
+  #post14 {
+    left: 1600px;
+    top: 1900px;
+  }
+
+  #post15 {
+    left: 2150px;
+    top: 1800px;
+  }
+  
+  // row 4
 
   // #post11 {
   //     left: 1000px;
@@ -162,7 +200,7 @@ main {
   //   }
   // }
 
-
+}
 
 
 // PORTFOLIO PIECE

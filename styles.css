@@ -1,44 +1,156 @@
 /*
-Error: Invalid CSS after "}": expected "}", was ""
-        on line 185 of styles.scss
+Theme Name: Sarah Meadows Portfolio
+Author: Oskar
+Author URI: http://oskarradon.com
+Description: Simple portfolio site theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, featured-images
 
-180:   }
-181: }
-182: 
-183: .image-caption {
-184:   display: none;
-185: }
-
-Backtrace:
-styles.scss:185
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:656:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:407:in `media_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:220:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:195:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+Made with help from Treehouse! :)
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"}\": expected \"}\", was \"\"\A         on line 185 of styles.scss\A \A 180:   }\A 181: }\A 182: \A 183: .image-caption {\A 184:   display: none;\A 185: }"; }
+body {
+  font-family: 'Helvetica Neue', 'Arial', sans-serif; }
+  @media (min-width: 500px) {
+    body {
+      width: 2600px; } }
+
+/*    HEADER    */
+header {
+  width: 203px;
+  margin: 50px 0 80px 50px; }
+  header nav h1 {
+    margin: 0px; }
+    header nav h1 a {
+      text-decoration: none;
+      font-weight: 100;
+      text-transform: uppercase;
+      letter-spacing: .23em;
+      margin: 0px;
+      color: black; }
+      header nav h1 a:visited {
+        color: black; }
+  header .menu {
+    font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0px; }
+    header .menu li {
+      display: inline;
+      margin-right: 30px; }
+      header .menu li a {
+        color: #F9C22E;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .04em; }
+        header .menu li a:visited {
+          color: #F9C22E; }
+      header .menu li.current-menu-item a, header .menu li:hover {
+        text-shadow: 0px 0px 4px #F9C22E; }
+
+main {
+  text-align: center;
+  overflow: auto; }
+  @media (min-width: 500px) {
+    main {
+      text-align: left; } }
+  main .portfolio-item {
+    max-width: 200px;
+    margin: 0 auto 80px; }
+    @media (min-width: 500px) {
+      main .portfolio-item {
+        position: absolute;
+        margin: 0; } }
+  main .post-title {
+    font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    color: #F9C22E;
+    font-style: italic;
+    margin: 8px auto 0;
+    word-wrap: break-word; }
+    @media (min-width: 500px) {
+      main .post-title {
+        opacity: 0; } }
+
+@media (min-width: 500px) {
+  .portfolio-item:hover .post-title {
+    opacity: 1; }
+
+  .portfolio-item:hover img {
+    box-shadow: 0 1px 6px #000; } }
+@media (min-width: 500px) {
+  #post1 {
+    left: 300px;
+    top: 300px; }
+
+  #post2 {
+    left: 900px;
+    top: 400px; }
+
+  #post3 {
+    left: 1500px;
+    top: 200px; }
+
+  #post4 {
+    left: 1650px;
+    top: 600px; }
+
+  #post5 {
+    left: 2200px;
+    top: 500px; }
+
+  #post6 {
+    left: 100px;
+    top: 1000px; }
+
+  #post7 {
+    left: 650px;
+    top: 850px; }
+
+  #post8 {
+    left: 1200px;
+    top: 950px; }
+
+  #post9 {
+    left: 1650px;
+    top: 1350px; }
+
+  #post10 {
+    left: 2100px;
+    top: 1100px; }
+
+  #post11 {
+    left: 200px;
+    top: 1450px; }
+
+  #post12 {
+    left: 800px;
+    top: 1750px; }
+
+  #post13 {
+    left: 1000px;
+    top: 1300px; }
+
+  #post14 {
+    left: 1600px;
+    top: 1900px; }
+
+  #post15 {
+    left: 2150px;
+    top: 1800px; } }
+.portfolio-title {
+  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  color: #F9C22E;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: normal;
+  margin: 50px;
+  width: 203px; }
+  @media (min-width: 500px) {
+    .portfolio-title {
+      margin: 50px auto; } }
+
+.image-caption {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */
