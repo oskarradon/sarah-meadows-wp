@@ -70,7 +70,6 @@ main {
     margin: 0 auto 80px;
     @media (min-width: 500px) {
       position: absolute;
-      padding:0 100px 100px 0;
       margin: 0;
     }
   }
@@ -96,62 +95,72 @@ main {
     box-shadow: 0 1px 6px #000;
   }
 
+}
 
+// STYLING EACH PORTFOLIO ITEM
+// This is the layout of each div:
 
-  // STYLING EACH PORTFOLIO ITEM
+// [ 1  2  3  4 ] [ 13 14 15 16 ]
+// [ 5  6  7  8 ] [ 17 18 19 20 ]
+// [ 9 10 11 12 ] [ 21 22 23 24 ]
+
+@media (min-width: 500px) {
 
   #post1 {
     left: 300px;
-    top: 250px;
+    top: 300px;
   }
 
   #post2 {
-    left: 800px;
+    left: 900px;
     top: 400px;
   }
 
   #post3 {
-    left: 1400px;
+    left: 1500px;
     top: 200px;
   }
-
+ 
   #post4 {
-    left: 200px;
-    top: 850px;
+    left: 1650px;
+    top: 600px;
   }
 
   #post5 {
-    left: 900px;
-    top: 850px;
+    left: 100px;
+    top: 1000px;
   }
 
   #post6 {
-    left: 1200px;
-    top: 350px;
-  }
-
-  #post7 {
-    left: 2200px;
-    top: 1850px;
-  }
-
-  #post8 {
-    left: 100px;
-    top: 650px;
-  }
-
-  #post9 {
-    left: 2200px;
+    left: 650px;
     top: 850px;
   }
 
-  #post10 {
-    left: 1900px;
+  #post7 {
+    left: 1200px;
+    top: 950px;
+  }
+
+  #post8 {
+    left: 1650px;
     top: 1350px;
   }
 
+  #post9 {
+    left: 200px;
+    top: 1450px;
+  }
 
-}
+  #post10 {
+    left: 800px;
+    top: 1650px;
+  }
+
+  // #post11 {
+  //     left: 1000px;
+  //     top: 1400px;
+  //   }
+  // }
 
 
 
