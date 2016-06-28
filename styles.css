@@ -57,7 +57,8 @@ main {
     @media (min-width: 500px) {
       main .portfolio-item {
         position: absolute;
-        padding: 0 100px 100px 0; } }
+        padding: 0 100px 100px 0;
+        margin: 0; } }
   main .post-title {
     font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
     color: #F9C22E;
@@ -92,8 +93,28 @@ main {
     top: 850px; }
 
   #post5 {
-    left: 200px;
-    top: 850px; } }
+    left: 900px;
+    top: 850px; }
+
+  #post6 {
+    left: 1200px;
+    top: 350px; }
+
+  #post7 {
+    left: 2200px;
+    top: 1850px; }
+
+  #post8 {
+    left: 100px;
+    top: 650px; }
+
+  #post9 {
+    left: 2200px;
+    top: 850px; }
+
+  #post10 {
+    left: 1900px;
+    top: 1350px; } }
 .portfolio-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   color: #F9C22E;
