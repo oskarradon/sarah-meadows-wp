@@ -50,8 +50,7 @@ header {
         text-shadow: 0px 0px 4px #F9C22E; }
 
 main {
-  text-align: center;
-  overflow: auto; }
+  text-align: center; }
   @media (min-width: 500px) {
     main {
       text-align: left; } }
@@ -137,7 +136,27 @@ main {
 
   #post15 {
     left: 2150px;
-    top: 1800px; } }
+    top: 1800px; }
+
+  #post16 {
+    left: 100px;
+    top: 2700px; }
+
+  #post17 {
+    left: 300px;
+    top: 2100px; }
+
+  #post18 {
+    left: 900px;
+    top: 2600px; }
+
+  #post19 {
+    left: 1800px;
+    top: 2500px; }
+
+  #post20 {
+    left: 2200px;
+    top: 2900px; } }
 .portfolio-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   color: #F9C22E;

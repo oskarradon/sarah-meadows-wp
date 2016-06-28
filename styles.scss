@@ -65,7 +65,6 @@ header  {
 // FRONT PAGE
 main {
   text-align: center;
-  overflow: auto;
   @media (min-width: 500px) {
     text-align: left;
   }
@@ -194,12 +193,36 @@ main {
   
   // row 4
 
-  // #post11 {
-  //     left: 1000px;
-  //     top: 1400px;
-  //   }
-  // }
+  #post16 {
+    left: 100px;
+    top: 2700px;
+  }
 
+  #post17 {
+    left: 300px;
+    top: 2100px;
+  }
+
+  #post18 {
+    left: 900px;
+    top: 2600px;
+  }
+
+  #post19 {
+    left: 1800px;
+    top: 2500px;
+  }
+
+  #post20 {
+    left: 2200px;
+    top: 2900px;
+  }
+
+  // #post21 {
+  //   left: 2600px;
+  //   top: 2300px;
+  // }
+    
 }
 
 
