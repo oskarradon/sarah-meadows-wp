@@ -13,9 +13,6 @@ Made with help from Treehouse! :)
 
 body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  @media (min-width: 500px) {
-    width: 2600px;
-  }
 }
 
 /*    HEADER    */
@@ -234,13 +231,20 @@ main {
   font-size: 16px;
   font-style: italic;
   font-weight: normal;
-  margin: 50px;
-  width: 203px;
+  margin: 0 50px 80px;
+  // text-align: center;
+  // width: 100px;
+  word-wrap: break-word;
   @media (min-width: 500px) {
-    margin: 50px auto;
+    // margin: 50px auto;
   }
 }
 
 .image-caption {
-  display: none;
+  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  color: #F9C22E;
+  font-size: 16px;
+  @media (min-width: 500px) {
+    display: none;
+  }
 }
