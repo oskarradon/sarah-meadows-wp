@@ -168,7 +168,8 @@ main {
   color: #F9C22E;
   font-style: italic;
   font-size: 16px;
-  margin: 0 50px 80px;
+  margin: 8px 50px 72px;
+  text-align: center;
   word-wrap: break-word; }
   @media (min-width: 500px) {
     .image-caption {
@@ -176,5 +177,15 @@ main {
 
 .portfolio-image {
   margin: 0 auto; }
+
+.portfolio-gallery {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column; }
+  @media (min-width: 500px) {
+    .portfolio-gallery {
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 600px; } }
 
 /*# sourceMappingURL=styles.css.map */
