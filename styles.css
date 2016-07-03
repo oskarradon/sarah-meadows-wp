@@ -158,17 +158,23 @@ main {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   color: #F9C22E;
   font-size: 16px;
-  font-style: italic;
   font-weight: normal;
   margin: 0 50px 80px;
+  text-align: center;
   word-wrap: break-word; }
 
 .image-caption {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   color: #F9C22E;
-  font-size: 16px; }
+  font-style: italic;
+  font-size: 16px;
+  margin: 0 50px 80px;
+  word-wrap: break-word; }
   @media (min-width: 500px) {
     .image-caption {
       display: none; } }
+
+.portfolio-image {
+  margin: 0 auto; }
 
 /*# sourceMappingURL=styles.css.map */
