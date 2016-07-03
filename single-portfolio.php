@@ -5,7 +5,7 @@
 
 	<h1 class="portfolio-title"><?php the_title(); ?></h1>
 
-	<main>
+	<section class="portfolio-gallery">
 
 		<?php 
 
@@ -14,16 +14,16 @@
 		if( $images ): ?>
 
 			<?php foreach( $images as $image ): ?>
-				<div class="post-image">
+				
 					<img class="portfolio-image" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
 
 					<p class="image-caption"><?php echo $image['caption']; ?></p>
-				</div>
+				
 			<?php endforeach; ?>
 
 		<?php endif; ?>
 
-	</main>
+	</section>
 	
 <?php endwhile; endif; ?>
 
