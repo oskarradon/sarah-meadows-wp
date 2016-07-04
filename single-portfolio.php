@@ -14,11 +14,15 @@
 		if( $images ): ?>
 
 			<?php foreach( $images as $image ): ?>
-				
-					<img class="portfolio-image" src="<?php echo $image['sizes']['medium']; ?>" alt="<?php echo $image['caption']; ?>" />
+
+				<div class="portfolio-image">
+
+					<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['caption']; ?>" />
 
 					<p class="image-caption"><?php echo $image['caption']; ?></p>
-				
+
+				</div>
+
 			<?php endforeach; ?>
 
 		<?php endif; ?>
