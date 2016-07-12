@@ -30,6 +30,7 @@ header {
         color: black; }
   header .menu {
     font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
     list-style: none;
     margin: 5px 0 0;
     padding: 0px; }
@@ -60,6 +61,7 @@ main {
         margin: 0; } }
   main .post-title {
     font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
     color: #F9C22E;
     font-style: italic;
     margin: 8px auto 0;
@@ -154,17 +156,17 @@ main {
   #post20 {
     left: 2200px;
     top: 2900px; } }
-.portfolio-title {
+.portfolio-title, .page-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
   color: #F9C22E;
-  font-size: 16px;
-  font-weight: normal;
-  margin: 0 50px 80px;
+  margin-bottom: 60px;
   text-align: center;
   word-wrap: break-word; }
 
 .image-caption {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
   color: #F9C22E;
   font-style: italic;
   font-size: 16px;
@@ -172,7 +174,7 @@ main {
   margin: 9px auto 0;
   text-align: center;
   word-wrap: break-word; }
-  @media (min-width: 634px) {
+  @media (min-width: 943px) {
     .image-caption {
       opacity: 0; } }
 
@@ -181,13 +183,16 @@ main {
   padding: 30px 30px 0; }
   .portfolio-image img {
     width: 200px; }
-    .portfolio-image img:hover {
-      cursor: help; }
-    .portfolio-image img.active:hover {
-      cursor: pointer; }
     @media (min-width: 400px) {
       .portfolio-image img {
         width: 250px; } }
+    @media (min-width: 943px) {
+      .portfolio-image img:hover {
+        cursor: help;
+        box-shadow: 0 1px 6px #000; }
+      .portfolio-image img.active:hover {
+        cursor: pointer;
+        box-shadow: none; } }
 
 .portfolio-gallery {
   display: flex;
@@ -203,5 +208,21 @@ main {
   @media (min-width: 944px) {
     .portfolio-gallery {
       width: 945px; } }
+
+.page-content {
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 0 50px;
+  font-size: 14px;
+  line-height: 1.3em; }
+  @media (min-width: 900px) {
+    .page-content {
+      width: 900px;
+      margin: 0 auto; } }
+  .page-content strong {
+    font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+    color: #F9C22E;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px; }
 
 /*# sourceMappingURL=styles.css.map */
