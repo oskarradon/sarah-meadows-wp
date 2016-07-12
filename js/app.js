@@ -1,4 +1,9 @@
 var $ = jQuery;
+var windowWidth = $(window).innerWidth();
+
+$(window).resize(function() {
+  windowWidth = $(window).innerWidth();
+});
 
 $(function() {
 
@@ -12,14 +17,8 @@ $(function() {
     $('body').css({ 'height' : '3200px' });
   }
 
-  var windowWidth = $(window).width();
 
-  $(window).resize(function() {
-    windowWidth = $(window).width();
-  
-  });
-
-  if ( windowWidth > 634 ) {
+  if ( windowWidth > 943 ) {
     $('.portfolio-image').toggle(function() {
       $(this).children('img').css({ 'width' : '400px' }).addClass('active');
       $(this).children('.image-caption').css({ 'opacity' : 1 });
