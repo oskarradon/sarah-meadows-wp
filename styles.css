@@ -51,11 +51,11 @@ main {
   @media (min-width: 500px) {
     main {
       text-align: left; } }
-  main .portfolio-item {
+  main .portfolio-item, main .link {
     max-width: 200px;
     margin: 0 auto 80px; }
     @media (min-width: 500px) {
-      main .portfolio-item {
+      main .portfolio-item, main .link {
         position: absolute;
         margin: 0; } }
   main .post-title {
