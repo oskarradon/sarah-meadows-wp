@@ -15,19 +15,19 @@
 
   <?php if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post(); ?>
   
-  <div id="post<?php echo $unique_id;?>" class="portfolio-item">
 
     <?php if( get_post_type() == 'portfolio' ): ?>
-      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-size'); ?></a>
+      <div id="post<?php echo $unique_id;?>" class="portfolio-item">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-size'); ?></a>
+        <p class="post-title"><?php the_title(); ?></p>
+      </div>
     <?php endif; ?>
 
     <?php if( get_post_type() == 'link' ): ?>
-      <a href="<?php echo get_field('link'); ?>"><?php the_post_thumbnail('post-size'); ?></a>
+      <div id="post<?php echo $unique_id;?>" class="link">
+        <a href="<?php echo get_field('link'); ?>"><?php the_post_thumbnail('post-size'); ?></a>
+      </div>
     <?php endif; ?>
-    
-    <p class="post-title"><?php the_title(); ?></p>
-
-  </div>
 
   <?php $unique_id++; ?>
   
