@@ -15,11 +15,11 @@ body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
-/*    HEADER    */
+// HEADER
 
 header  {
   width: 203px;
-  margin: 50px 0 80px 50px;
+  margin: 50px 0 50px 50px;
   nav h1 {
     margin: 0px;
     a {
@@ -61,6 +61,7 @@ header  {
 
 
 // FRONT PAGE
+
 main {
   text-align: center;
   @media (min-width: 500px) {
@@ -227,11 +228,11 @@ main {
 
 // PORTFOLIO PIECE
 
-.portfolio-title, .page-title {
+.portfolio-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   font-weight: 500;
   color: #F9C22E;
-  margin-bottom: 60px;
+  margin: 0 auto 30px;
   text-align: center;
   word-wrap: break-word;
 }
