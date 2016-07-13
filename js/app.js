@@ -26,6 +26,11 @@ $(function() {
     }, function () {
       $(this).children('img').css({ 'width' : '250px' }).removeClass('active');
       $(this).children('.image-caption').css({ 'opacity' : 0 });
-    })
+    });
+
+    // $('.portfolio-title').click(function() {
+    //   $('.portfolio-image img').css({ 'width' : '250px' });
+    //   $('.image-caption').css({ 'opacity' : 0 });
+    // });
   }
 });
