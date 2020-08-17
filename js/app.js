@@ -18,7 +18,6 @@ $(function() {
     }
   }
 
-
   if ( windowWidth > 943 ) {
     $('.portfolio-image').toggle(function() {
       $(this).children('img').css({ 'width' : '400px' }).addClass('active');

@@ -14,9 +14,9 @@ body {
   font-family: 'Helvetica Neue', 'Arial', sans-serif; }
 
 header {
-  width: 203px;
   margin: 50px 0 50px 50px; }
   header nav h1 {
+    width: 203px;
     margin: 0px; }
     header nav h1 a {
       text-decoration: none;
@@ -89,24 +89,28 @@ main {
     top: 200px; }
 
   #post4 {
-    left: 1650px;
-    top: 600px; }
+    left: 1950px;
+    top: 300px; }
+
+  /*#post5 {
+    left: 2200px;
+    top: 400px; }*/
 
   #post5 {
-    left: 2200px;
-    top: 400px; }
-
-  #post6 {
     left: 100px;
     top: 1000px; }
 
-  #post7 {
+  #post6 {
     left: 650px;
     top: 850px; }
 
-  #post8 {
+  #post7 {
     left: 1200px;
     top: 950px; }
+
+  #post8 {
+  left: 2000px;
+  top: 750px; }
 
   #post9 {
     left: 1650px;
@@ -154,10 +158,12 @@ main {
 
   #post20 {
     left: 2200px;
-    top: 2900px; } }
+    top: 2900px; }
+}
 .portfolio-title {
   font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
   font-weight: 500;
+  font-style: italic;
   color: #F9C22E;
   margin: 0 auto 30px;
   text-align: center;
@@ -223,5 +229,46 @@ main {
     font-weight: 400;
     font-style: italic;
     font-size: 16px; }
+
+/*studio page*/
+
+.studio-post {
+  margin-bottom: 60px;
+  padding: 0 50px;
+  max-width: 500px;
+}
+.studio-title {
+  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  color: #F9C22E;
+  max-width: 500px;
+}
+.studio-post img {
+  width: 100%;
+  height: auto;
+}
+/*.studio-post p, .studio-title {
+  word-break: break-all;
+  white-space: normal;
+}*/
+.studio-post p {
+  line-height: 1.3em;
+}
+
+.studio-content-wrapper p a img {
+  display: block;
+  margin: 20px 0px 0px;
+}
+.studio-time {
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+}
+
+@media (min-width: 500px) {
+  .studio-post {
+    max-width: 500px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
