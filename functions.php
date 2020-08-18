@@ -32,10 +32,6 @@ function wpt_theme_js() {
 
 	wp_enqueue_script( 'modernizr_js', get_template_directory_uri() . '/js/modernizr.js', '', '', false );
 
-	wp_enqueue_script( 'jquery' );
-
-	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/js/app.js', array('jquery'), '', true );
-
 }
 add_action( 'wp_enqueue_scripts', 'wpt_theme_js' );
 
