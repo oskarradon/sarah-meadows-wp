@@ -43,12 +43,34 @@ Tags: light, featured-images
   font-weight: normal;
 }
 
-:root {
-  --yellow:    #F9C22E;
-  --black:     #181818;
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-60.woff2) format('woff2');
+  font-weight: 300;
+}
 
-  --font-mono: 'Iosevka', 'Courier New', Courier, monospace;
-  --font-sans: 'Lunchtype25', Helvetica, Arial, sans-serif;
+@font-face {
+  font-family: 'Authentic Sans';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-90.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-90.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/AuthenticSans/AUTHENTICSans-Condensed-90.woff2) format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Wreckage';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/Wreckage-GrotesqueOne.otf) format('opentype');
+}
+
+:root {
+  --yellow:       #F9C22E;
+  --black:        #181818;
+
+  --font-mono:    'Iosevka', 'Courier New', Courier, monospace;
+  --font-sans:    'Authentic Sans', Helvetica, Arial, sans-serif;
+  --font-display: 'Wreckage', var(--font-sans);
 }
 
 body {
@@ -61,28 +83,34 @@ header {
 
 @media (min-width: 800px) {
   header {
-    margin: 2rem 0 4rem 2rem;
+    margin: 3.5rem 0 4rem 3rem;
   }
 }
 
 header h1 {
   width: 203px;
-  margin: 0px;
+  margin: 20px 0 0;
 }
 
 header h1 a {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-display);
   text-decoration: none;
   font-weight: 100;
-  font-size: 2rem;
-  text-transform: uppercase;
-  letter-spacing: .23em;
+  font-size: 3rem;
+  letter-spacing: .05em;
   margin: 0px;
-  color: var(--black);
+  color: white;
+  text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
-header h1 a:visited {
-  color: var(--black);
+@media (min-width: 800px) {
+  header h1 a {
+    font-size: 5rem;
+  }
 }
 
 header .menu {
@@ -271,6 +299,7 @@ main {
   font-size: 3rem;
   margin: 0 auto 30px;
   text-align: center;
+  font-weight: lighter;
 }
 
 @media (min-width: 800px) {
@@ -337,14 +366,15 @@ main {
   text-shadow: 0px 0px 4px var(--yellow);
 }
 
-.page-content {
+.page-content p {
   font-family: var(--font-sans);
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .page-content p strong {
-  font-weight: 400;
   font-size: 2rem;
+  font-weight: 300;
 }
 
 /*studio page*/
