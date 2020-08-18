@@ -35,12 +35,20 @@ Tags: light, featured-images
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Lunchtype25';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/Lunchtype25/lunchtype25-light_condensed-webfont.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/Lunchtype25/lunchtype25-light_condensed-webfont.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/Lunchtype25/lunchtype25-light_condensed-webfont.woff2) format('woff2');
+  font-weight: normal;
+}
+
 :root {
   --yellow:    #F9C22E;
   --black:     #181818;
 
   --font-mono: 'Iosevka', 'Courier New', Courier, monospace;
-  --font-sans: 'Faune', Helvetica, Arial, sans-serif;
+  --font-sans: 'Lunchtype25', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -258,10 +266,6 @@ main {
   max-width: 900px;
 }
 
-main p strong {
-
-}
-
 .portfolio-title, .page-title {
   font-family: var(--font-sans);
   font-size: 3rem;
@@ -319,10 +323,9 @@ main p strong {
   font-weight: 500;
   font-style: italic;
   font-size: 16px;
-  max-width: 200px;
+  max-width: 90%;
   margin: 9px auto 0;
-  text-align: center;
-  word-wrap: break-word;
+  /* text-align: center; */
 }
 
 .page-content p a, .image-description a {
@@ -334,19 +337,12 @@ main p strong {
   text-shadow: 0px 0px 4px var(--yellow);
 }
 
-/* @media (min-width: 400px) {
-  .portfolio-image img {
-    width: 250px;
-  }
-} */
-
 .page-content {
-  font-family: var(--font-mono);
-  font-size: 16px;
+  font-family: var(--font-sans);
+  font-size: 22px;
 }
 
 .page-content p strong {
-  font-family: var(--font-mono);
   font-weight: 400;
   font-size: 2rem;
 }
