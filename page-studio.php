@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-
+<main>
 <?php $loop = new WP_Query( array( 'post_type' => 'studio_post', 'posts_per_page' => -1, 'category' => 'current' ) ); ?>
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -19,5 +19,7 @@
 </article>
 
 <?php endwhile; wp_reset_query(); ?>
+
+</main>
 
 <?php get_footer(); ?>
