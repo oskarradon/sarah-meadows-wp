@@ -11,20 +11,17 @@
 
   <body <?php  body_class(); ?>>
     <header>
-      <nav>
-        <h1><a class='current' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+      <h1><a class='current' href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 
-        <?php
+      <?php
 
-        $defaults = array(
-          'container' => false,
-          'theme_location'  => 'primary-menu',
-          'menu_class'  => 'menu'
-        );
+      $defaults = array(
+        'container' => false,
+        'theme_location'  => 'primary-menu',
+        'menu_class'  => 'menu'
+      );
 
-        wp_nav_menu( $defaults );
+      wp_nav_menu( $defaults );
 
-        ?>
-
-      </nav>
+      ?>
     </header>
