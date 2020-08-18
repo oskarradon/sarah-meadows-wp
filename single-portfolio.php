@@ -8,37 +8,20 @@
 
 		$images = get_field('images');
 
-		if( count($images) == 1 ): ?>
+		if( $images ): ?>
 
-			<section class="portfolio-gallery one-up">
-
-			<?php foreach( $images as $image ): ?>
-				<div class="portfolio-image">
-					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
-					<p class="image-description"><?php echo $image['description']; ?></p>
-				</div>
-			<?php endforeach; ?>
-
-		<?php elseif( count($images) == 1 ): ?>
-
-			<section class="portfolio-gallery one-up">
-
-				<?php foreach( $images as $image ): ?>
-					<div class="portfolio-image">
-						<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
-						<p class="image-description"><?php echo $image['description']; ?></p>
-					</div>
-				<?php endforeach; ?>
-
-		<?php else: ?>
-
-			<section class="portfolio-gallery">
+			<section class="portfolio-gallery <?php if(count($images) == 1): ?> one-up<?php elseif(count($images) == 2): ?> two-up<?php endif; ?>">
 
 			<?php foreach( $images as $image ): ?>
+
 				<div class="portfolio-image">
+
 					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
+
 					<p class="image-description"><?php echo $image['description']; ?></p>
+
 				</div>
+
 			<?php endforeach; ?>
 
 		<?php endif; ?>
