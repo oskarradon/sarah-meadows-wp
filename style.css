@@ -1,23 +1,15 @@
 /*
-Theme Name: Sarah Meadows Portfolio
+Theme Name: Sarah Meadows 2
 Author: Oskar
-Author URI: http://oskarradon.com
+Author URI: http://oskar.zone
 Description: Simple portfolio site theme
-Version: 1.0
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: light, featured-images
 
 
 */
-
-@font-face {
-  font-family: 'Faune';
-  src: url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.ttf) format('truetype'),
-  url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.woff) format('woff'),
-  url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.woff2) format('woff2');
-  font-weight: normal;
-}
 
 @font-face {
   font-family: 'Iosevka';
@@ -61,7 +53,7 @@ Tags: light, featured-images
 
 @font-face {
   font-family: 'Wreckage';
-  src: url(/wp-content/themes/sarah-meadows-wp/fonts/Wreckage-GrotesqueOne.otf) format('opentype');
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/Wreckage/Wreckage-GrotesqueOne.otf) format('opentype');
 }
 
 :root {
@@ -109,7 +101,7 @@ header h1 a {
 
 @media (min-width: 800px) {
   header h1 a {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
 
@@ -158,6 +150,17 @@ header .menu li.current-menu-item a, header .menu li:hover {
   }
 }
 
+.link {
+  top: 100px;
+  right: 100px;
+}
+
+@media (min-width: 800px) {
+  .link {
+    top: 150px;
+  }
+}
+
 .post-title {
   font-family: var(--font-mono);
   font-weight: 500;
@@ -179,14 +182,14 @@ header .menu li.current-menu-item a, header .menu li:hover {
   }
 
   .portfolio-item:hover img {
-    box-shadow: 0 1px 6px #000;
+    box-shadow: 0 1px 6px #ABABAB;
   }
 }
 
 @media (min-width: 500px) {
   #post1 {
     left: 300px;
-    top: 300px;
+    top: 400px;
   }
 
   #post2 {
@@ -203,10 +206,6 @@ header .menu li.current-menu-item a, header .menu li:hover {
     left: 1950px;
     top: 300px;
   }
-
-  /*#post5 {
-    left: 2200px;
-    top: 400px; }*/
 
   #post5 {
     left: 100px;
@@ -313,7 +312,7 @@ main {
 }
 
 .portfolio-image {
-  align-self: stretch;
+  align-self: center;
 }
 
 .portfolio-gallery {
@@ -354,15 +353,15 @@ main {
   font-size: 16px;
   max-width: 90%;
   margin: 9px auto 0;
-  /* text-align: center; */
+  text-align: center;
 }
 
-.page-content p a, .image-description a {
+p a, .image-description a {
   color: var(--yellow);
   text-decoration: none;
 }
 
-.page-content p a:hover, .image-description a:hover {
+p a:hover, .image-description a:hover {
   text-shadow: 0px 0px 4px var(--yellow);
 }
 
@@ -381,14 +380,13 @@ main {
 
 .studio-post {
   margin-bottom: 60px;
-  padding: 0 50px;
-  max-width: 500px;
+  font-family: var(--font-sans);
 }
 
 .studio-title {
   font-family: var(--font-mono);
   color: var(--yellow);
-  max-width: 500px;
+  max-width: 90%;
 }
 
 .studio-post img {
@@ -397,7 +395,14 @@ main {
 }
 
 .studio-post p {
+  font-size: 18px;
   line-height: 1.3em;
+}
+
+@media (min-width: 800px) {
+  .studio-post p {
+    font-size: 22px;
+  }
 }
 
 .studio-content-wrapper p a img {
@@ -406,16 +411,9 @@ main {
 }
 
 .studio-time {
-  font-family: 'Helvetica Neue', sans-serif;
   text-align: center;
   font-size: 24px;
   font-weight: 200;
-}
-
-@media (min-width: 500px) {
-  .studio-post {
-    max-width: 500px;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

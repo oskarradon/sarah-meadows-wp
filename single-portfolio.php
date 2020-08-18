@@ -18,7 +18,7 @@
 
 					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
 
-					<p class="image-description"><?php echo $image['description']; ?></p>
+					<p class="image-description"><?php echo $image['caption']; ?></p>
 
 				</div>
 
