@@ -4,24 +4,41 @@
 
 	<p class="portfolio-title"><?php the_title(); ?></p>
 
-	<section class="portfolio-gallery">
-
 		<?php
 
 		$images = get_field('images');
 
-		if( $images ): ?>
+		if( count($images) == 1 ): ?>
+
+			<section class="portfolio-gallery one-up">
 
 			<?php foreach( $images as $image ): ?>
-
 				<div class="portfolio-image">
-
 					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
-
 					<p class="image-description"><?php echo $image['description']; ?></p>
-
 				</div>
+			<?php endforeach; ?>
 
+		<?php elseif( count($images) == 1 ): ?>
+
+			<section class="portfolio-gallery one-up">
+
+				<?php foreach( $images as $image ): ?>
+					<div class="portfolio-image">
+						<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
+						<p class="image-description"><?php echo $image['description']; ?></p>
+					</div>
+				<?php endforeach; ?>
+
+		<?php else: ?>
+
+			<section class="portfolio-gallery">
+
+			<?php foreach( $images as $image ): ?>
+				<div class="portfolio-image">
+					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
+					<p class="image-description"><?php echo $image['description']; ?></p>
+				</div>
 			<?php endforeach; ?>
 
 		<?php endif; ?>
