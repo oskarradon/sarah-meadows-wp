@@ -1,13 +1,12 @@
 <?php get_header(); ?>
 
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 	<p class="portfolio-title"><?php the_title(); ?></p>
 
 	<section class="portfolio-gallery">
 
-		<?php 
+		<?php
 
 		$images = get_field('images');
 
@@ -17,9 +16,9 @@
 
 				<div class="portfolio-image">
 
-					<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['caption']; ?>" />
+					<img src="<?php echo $image['sizes']['large']; ?>" alt="" />
 
-					<p class="image-caption"><?php echo $image['caption']; ?></p>
+					<p class="image-description"><?php echo $image['description']; ?></p>
 
 				</div>
 
@@ -28,8 +27,7 @@
 		<?php endif; ?>
 
 	</section>
-	
-<?php endwhile; endif; ?>
 
+	<?php endwhile; endif; ?>
 
 <?php get_footer(); ?>
