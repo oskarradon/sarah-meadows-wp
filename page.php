@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-<section class="main-content">
+<main>
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+      <h1 class="page-title"><?php the_title(); ?></h1>
 
       <section class="page-content"><?php the_content(); ?></section>
 
@@ -12,6 +14,6 @@
 
   	<?php endif; ?>
 
-</section>
+</main>
 
 <?php get_footer(); ?>
