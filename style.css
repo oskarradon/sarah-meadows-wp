@@ -288,10 +288,13 @@ main p strong {
   grid-template-columns: 1fr;
   grid-gap: 2rem;
   padding-bottom: 80px;
+  margin: 0 auto;
+  max-width: 2700px;
 }
 
 .portfolio-gallery.one-up {
   grid-template-columns: 1fr;
+  max-width: 900px;
 }
 
 @media (min-width: 1000px) {
@@ -304,9 +307,10 @@ main p strong {
   .portfolio-gallery {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  
+
   .portfolio-gallery.two-up {
     grid-template-columns: 1fr 1fr;
+    max-width: 1800px;
   }
 }
 
