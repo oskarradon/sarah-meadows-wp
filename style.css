@@ -11,38 +11,82 @@ Tags: light, featured-images
 
 */
 
+@font-face {
+  font-family: 'Faune';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/faune/Faune-Display_Thin.woff2) format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-light.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-light.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-light.woff2) format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Iosevka';
+  src: url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-lightoblique.ttf) format('truetype'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-lightoblique.woff) format('woff'),
+  url(/wp-content/themes/sarah-meadows-wp/fonts/iosevka/iosevka-lightoblique.woff2) format('woff2');
+  font-style: italic;
+}
+
+:root {
+  --yellow:    #F9C22E;
+  --black:     #181818;
+
+  --font-mono: 'Iosevka', 'Courier New', Courier, monospace;
+  --font-sans: 'Faune', Helvetica, Arial, sans-serif;
+}
+
 body {
-  font-family: 'Helvetica Neue', 'Arial', sans-serif;
+  margin: 0 1rem 5rem;
 }
 
 header {
-  margin: 50px 0 50px 50px;
+  margin-bottom: 7rem;
 }
 
-header nav h1 {
+@media (min-width: 800px) {
+  header {
+    margin: 2rem 0 4rem 2rem;
+  }
+}
+
+header h1 {
   width: 203px;
   margin: 0px;
 }
 
-header nav h1 a {
+header h1 a {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-decoration: none;
   font-weight: 100;
+  font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: .23em;
   margin: 0px;
-  color: black;
+  color: var(--black);
 }
 
-header nav h1 a:visited {
-  color: black;
+header h1 a:visited {
+  color: var(--black);
 }
 
 header .menu {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+  font-family: var(--font-mono);
   font-weight: 500;
   list-style: none;
   margin: 5px 0 0;
   padding: 0px;
+}
+
+header .menu ul {
+  padding: 0;
 }
 
 header .menu li {
@@ -51,53 +95,54 @@ header .menu li {
 }
 
 header .menu li a {
-  color: #F9C22E;
+  color: var(--yellow);
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .04em;
+  font-size: 1rem;
 }
 
 header .menu li a:visited {
-  color: #F9C22E;
+  color: var(--yellow);
 }
 
 header .menu li.current-menu-item a, header .menu li:hover {
-  text-shadow: 0px 0px 4px #F9C22E;
+  text-shadow: 0px 0px 4px var(--yellow);
 }
 
-main {
+.portfolio-image {
   text-align: center;
 }
 
 @media (min-width: 500px) {
-  main {
+  .portfolio-image {
     text-align: left;
   }
 }
 
-main .portfolio-item, main .link {
+.portfolio-item, .link {
   max-width: 200px;
   margin: 0 auto 80px;
 }
 
 @media (min-width: 500px) {
-  main .portfolio-item, main .link {
+  .portfolio-item, .link {
     position: absolute;
     margin: 0;
   }
 }
 
-main .post-title {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+.post-title {
+  font-family: var(--font-mono);
   font-weight: 500;
-  color: #F9C22E;
+  color: var(--yellow);
   font-style: italic;
   margin: 8px auto 0;
   word-wrap: break-word;
 }
 
 @media (min-width: 500px) {
-  main .post-title {
+  .post-title {
     opacity: 0;
   }
 }
@@ -218,20 +263,54 @@ main .post-title {
   }
 }
 
-.portfolio-title {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  color: #F9C22E;
-  margin: 0 auto 30px;
-  text-align: center;
-  word-wrap: break-word;
+main {
+  margin: 0 auto;
+  max-width: 900px;
 }
 
-.image-caption {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
+main p strong {
+
+}
+
+.portfolio-title, .page-title {
+  font-family: var(--font-sans);
+  font-size: 3rem;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .portfolio-title, .page-title {
+    font-size: 4rem;
+  }
+}
+
+.portfolio-image img {
+  max-width: 100%;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  padding-bottom: 80px;
+}
+
+@media (min-width: 1000px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1600px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.image-description {
+  font-family: var(--font-mono);
   font-weight: 500;
-  color: #F9C22E;
   font-style: italic;
   font-size: 16px;
   max-width: 200px;
@@ -240,47 +319,23 @@ main .post-title {
   word-wrap: break-word;
 }
 
-@media (min-width: 943px) {
-  .image-caption {
-    opacity: 0;
-  }
+.page-content p a, .image-description a {
+  color: var(--yellow);
+  text-decoration: none;
 }
 
-.portfolio-image {
-  text-align: center;
-  padding: 30px 30px 0;
+.page-content p a:hover, .image-description a:hover {
+  text-shadow: 0px 0px 4px var(--yellow);
 }
 
-.portfolio-image img {
-  width: 200px;
-}
-
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   .portfolio-image img {
     width: 250px;
   }
-}
+} */
 
-@media (min-width: 943px) {
-  .portfolio-image img:hover {
-    cursor: help;
-    box-shadow: 0 1px 6px #000;
-  }
 
-  .portfolio-image img.active:hover {
-    cursor: pointer;
-    box-shadow: none;
-  }
-}
-
-.portfolio-gallery {
-  display: flex;
-  align-content: space-between;
-  flex-direction: column;
-  padding-bottom: 80px;
-}
-
-@media (min-width: 634px) {
+/* @media (min-width: 634px) {
   .portfolio-gallery {
     flex-direction: row;
     flex-wrap: wrap;
@@ -293,28 +348,17 @@ main .post-title {
   .portfolio-gallery {
     width: 945px;
   }
-}
+} */
 
 .page-content {
-  font-family: 'Helvetica Neue', sans-serif;
-  padding: 0 50px;
-  font-size: 14px;
-  line-height: 1.3em;
-}
-
-@media (min-width: 900px) {
-  .page-content {
-    width: 900px;
-    margin: 0 auto;
-  }
-}
-
-.page-content strong {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
-  color: #F9C22E;
-  font-weight: 400;
-  font-style: italic;
+  font-family: var(--font-mono);
   font-size: 16px;
+}
+
+.page-content p strong {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 2rem;
 }
 
 /*studio page*/
@@ -326,8 +370,8 @@ main .post-title {
 }
 
 .studio-title {
-  font-family: 'Roboto Mono', 'Helvetica Neue', sans-serif;
-  color: #F9C22E;
+  font-family: var(--font-mono);
+  color: var(--yellow);
   max-width: 500px;
 }
 
